@@ -6,12 +6,12 @@ let doi;
 if (url.searchParams.get('in') != null) {
   doi = url.searchParams.get('in');
 } else {
-  doi = "Syarifah";
+  doi = "Shalisa";
 }
 
 let footer = document.getElementById("credit");
 footer.innerHTML = doi;
-footer.href = "https://github.com/Lynxx21/";
+footer.href = "-";
 
 function time() {
   var d = new Date();
@@ -60,7 +60,7 @@ function selesai() {
 document.querySelector(".tombol").addEventListener('click', function () {
   Swal.fire({
     title: `Hallo ${doi}!`,
-    html: `Ini Udah ${time()}, Kamu udah ${makan()} syar?`,
+    html: `Ini Udah ${time()}, Kamu udah ${makan()} shal?`,
     timer: 2500,
     timerProgressBar: true,
     showConfirmButton: false,
@@ -69,7 +69,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
       Swal.fire('Pasti belum kan makan dulu ya').then((result) => {
         Swal.fire({
           title: ' ',
-          html: `Gua tau lu pasti sibuk nonton anime`,
+          html: `Gua tau lu pasti sibuk nonton drakor`,
           timer: 2000,
           timerProgressBar: true,
           showConfirmButton: false,
@@ -85,7 +85,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
               if (result.dismiss === Swal.DismissReason.timer) {
                 Swal.fire('Jaga Kesehatan, kan sekarang lagi musim corona').then((result) => {
                   Swal.fire(
-                    'Jangan sering bedagang cuman buat nonton anime!',
+                    'Jangan sering bedagang cuman buat nonton drakor!',
                     '',
                     'error'
                   ).then((result) => {
@@ -94,7 +94,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                       '',
                       'error'
                     ).then((result) => {
-                      Swal.fire('Kalo nonton anime jangan berlebihan wkwkw ').then((result) => {
+                      Swal.fire('Kalo nonton drakor jangan berlebihan wkwkw ').then((result) => {
                         Swal.fire({
                           title: 'Gua mau nanya',
                           text: 'Ada sesuatu yang lu pengin sekarang jawab aja',
@@ -107,7 +107,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
                             Swal.fire({
                               title: 'Mau apa?',
                               input: 'text',
-                              inputPlaceholder: 'ex: Anime, Pulsa, or etc',
+                              inputPlaceholder: 'ex: Pulsa, or etc',
                               showCancelButton: false,
                               inputValidator: (value) => {
                                 if (!value) {
