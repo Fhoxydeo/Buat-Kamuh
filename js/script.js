@@ -66,7 +66,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
     showConfirmButton: false,
   }).then((result) => {
     if (result.dismiss === Swal.DismissReason.timer) {
-      Swal.fire('Pasti belum kan makan dulu ya').then((result) => {
+      Swal.fire('Pasti belum kan, makan dulu ya').then((result) => {
         Swal.fire({
           title: ' ',
           html: `Gua tau lu pasti sibuk nonton drakor`,
@@ -85,7 +85,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
               if (result.dismiss === Swal.DismissReason.timer) {
                 Swal.fire('Jaga Kesehatan, kan sekarang lagi musim corona').then((result) => {
                   Swal.fire(
-                    'Jangan sering bedagang cuman buat nonton drakor!',
+                    'Jangan sering begadang cuman buat nonton drakor!',
                     '',
                     'error'
                   ).then((result) => {
@@ -111,19 +111,19 @@ document.querySelector(".tombol").addEventListener('click', function () {
                               showCancelButton: false,
                               inputValidator: (value) => {
                                 if (!value) {
-                                  return 'Isi dulu gblk kwkwkw'
+                                  return 'Isi dulu lah kwkwkw'
                                 }
                               }
                             }).then((result) => {
                               Swal.fire(`Oke ${doi} `, 'Ntar Gua kabulin kemauan lu', 'success').then((result) => {
-                                Swal.fire(`Dadah syang ${doi} ^^`).then((result) => {
+                                Swal.fire(`Dadah sayang ${doi} 🥰`).then((result) => {
                                   selesai()
                                 });
                               })
                             })
                           } else if (result.isDenied) {
-                            Swal.fire('Oh Engga ada ya yaudah deh').then((result) => {
-                              Swal.fire(`Dadah syang ${doi} `).then((result) => {
+                            Swal.fire('Oh Engga ada ya yaudah deh😅').then((result) => {
+                              Swal.fire(`Dadah sayang ${doi} `).then((result) => {
                                 selesai()
                               });
                             })
